@@ -1,5 +1,6 @@
 package com.example.vitto.uniapp;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +13,13 @@ import java.util.List;
 
 public class StudentiAdapter extends BaseAdapter {
 
+    private Context context;
     private List<Studente> lista;
+
+    public StudentiAdapter(Context context, List<Studente> lista) {
+        this.context = context;
+        this.lista = lista;
+    }
 
     @Override
     public int getCount() { //restituisce numero elementi della lista
@@ -31,10 +38,10 @@ public class StudentiAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) { //associa ad ogni riga il layout creato
-        if (convertView=null){
-            convertView= LayoutInflater.from(context).inflate(R.layout.riga_studente_layout);
+        if (convertView==null){
+            convertView= LayoutInflater.from(context).inflate(R.layout.riga_studente_layout,null);
         }
-        TextView vMatricola= convertView.findViewById(R.id.txtMatricola);
+        TextView vMatricola= convertView.findViewById(R.id.txtMatricolaS);
         TextView vNomeCompleto= convertView.findViewById(R.id.txtNomeCompleto);
 
         Studente s= lista.get(position);

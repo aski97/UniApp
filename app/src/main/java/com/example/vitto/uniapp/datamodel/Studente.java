@@ -1,6 +1,8 @@
 package com.example.vitto.uniapp.datamodel;
 
-public class Studente {
+import java.io.Serializable;
+
+public class Studente implements Serializable{
 
     //attributi della classe
     private String matricola;

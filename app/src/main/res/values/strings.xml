@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">UniApp</string>
+    <string name="fail">Nessuno Studente Trovato</string>
 </resources>
