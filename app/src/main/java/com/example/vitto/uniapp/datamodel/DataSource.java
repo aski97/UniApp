@@ -46,7 +46,7 @@ public class DataSource {
         //elenco.replace(studente.getMatricola(),studente);
     }
 
-    public  Studente leggiStudente(String matricola){
+    public  Studente leggiStudente(String matricola){ //cerca uno studente per la matricola
         return elenco.get(matricola);
     }
 
@@ -63,7 +63,7 @@ public class DataSource {
         return risultato;
     }
 
-    private void popolaDataSource(){
+    private void popolaDataSource(){//istanziamo subito degli studenti in modo da provare l'app.
         elenco.put("A13001257",new Studente("A13001257","Belardo","Vittorio",180,26.5));
         elenco.put("A13001252",new Studente("A13001252","Purgato","Giovanna",180,26.5));
         elenco.put("A13001255",new Studente("A13001255","Criscuolo","Salvatore",180,26.5));
