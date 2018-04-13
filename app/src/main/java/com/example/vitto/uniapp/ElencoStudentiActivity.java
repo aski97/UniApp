@@ -57,6 +57,7 @@ public class ElencoStudentiActivity extends AppCompatActivity {
        btnRicerca.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
+               txtFail.setVisibility(View.INVISIBLE);
                prefisso = edtRicerca.getText().toString();
                numStudenti = queryRicerca(prefisso);
                if (numStudenti == 0) {
