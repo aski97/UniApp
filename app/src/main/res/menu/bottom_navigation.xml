@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navMain"
+        android:icon="@drawable/ic_apps_black_24dp"
+        android:title="Main" />
+    <item
+        android:id="@+id/navElenco"
+        android:icon="@drawable/ic_assignment_black_24dp"
+        android:title="Elenco">
+
+
+    </item>
+    <item
+        android:id="@+id/navAggiungi"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="Aggiungi" />
+    <item
+        android:id="@+id/navPreferiti"
+        android:icon="@drawable/ic_star_black_24dp"
+        android:title="Preferiti" />
+
+</menu>
